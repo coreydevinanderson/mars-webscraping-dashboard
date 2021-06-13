@@ -64,11 +64,10 @@ def scrape():
     for j in range(len(descriptions)):
         pic_names.append(descriptions[j].h3.text.strip())
 
+    names = ["cerberus", "schiaparelli", "syrtis_major", "valles_marineris"]
     urls = []
-
-    for i in range(len(descriptions)):
-        piece = descriptions[i].a["href"]
-        urls.append(f"https://marshemishperes.com/{piece}")
+    for n in range(len(names)):
+        urls.append(f"https://marshemispheres.com/images/{names[n]}_enhanced.tif")
 
     hemi = [None] * 4 
 

@@ -14,16 +14,17 @@ db = client.mars_db
 @app.route('/')
 def index():
     mars_stuff = list(db.mars.find())[0]
+    more_mars = list(db.mars.find())[0]["hemi"]
     print(mars_stuff)
 
-    return render_template('index.html', mars_stuff = mars_stuff)
+    return render_template('index.html', mars_stuff = mars_stuff, more_mars = more_mars)
 
 @app.route('/scraper')
 def scrape():
 
     # Run the scraper...
     mars_data = scrape_mars.scrape()
-    mongo.db.mars.update({}, mars_data, upsert = True)
+    db.mars.update({}, mars_data, upsert = True)
 
     return redirect("/")
 

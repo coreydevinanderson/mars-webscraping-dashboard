@@ -44,44 +44,28 @@
               <figcaption class="figure-caption">Today's featured picture (from: spaceimage-mars.com)</figcaption>
             </figure>
           </div>
-          <div class = "col-sm-6">
-            <p>{{mars_stuff2}}</p>
-          </div>
-          
-          <!-- <div class="row row-cols-1 row-cols-sm-2 g-0">
-            <div class="col">
-              <div class="card">
-                <img src="https://raw.githubusercontent.com/coreydevinanderson/python-api-challenge/master/WeatherPy/Images/maxtemp_all.png" class="card-img-top" alt="Temperature">
-                <div class = "card-body">
-                    <a href="temperature.html" class="stretched-link"></a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="https://raw.githubusercontent.com/coreydevinanderson/python-api-challenge/master/WeatherPy/Images/humidity_all.png" class="card-img-top" alt="Humidity">
-                <div class = "card-body">
-                    <a href="humidity.html" class="stretched-link"></a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="https://raw.githubusercontent.com/coreydevinanderson/python-api-challenge/master/WeatherPy/Images/cloudcover_all.png" class="card-img-top" alt="Cloudiness">
-                <div class = "card-body">
-                  <a href="cloudiness.html" class="stretched-link"></a>
-                </div>         
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="https://raw.githubusercontent.com/coreydevinanderson/python-api-challenge/master/WeatherPy/Images/windspeed_all.png" class="card-img-top" alt="Wind speed">
-                <div class = "card-body">
-                  <a href="windspeed.html" class="stretched-link"></a>
-                </div>  
-              </div>
-            </div>
+          <!-- <div class = "col-sm-6">
+            <ul>
+              {% for item in more_mars %}
+                <li> {{item.img_url}}</li>
+              {% endfor %}
+            </ul>
           </div> -->
+          <div class = "col-sm-6">
+            <h2>Visualizations</h2>
+              <div class="row row-cols-1 row-cols-sm-2 g-0">
+              {% for item in more_mars %}
+                <div class="col">
+                  <div class="card">
+                    <img src={{item.img_url}} class="card-img-top" alt="">
+                    <div class="card-body">
+                      <p class="card-text">{{item.title}}</p>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+              </div>
+          </div>
       </div>
     </div>
         

@@ -46,10 +46,10 @@ def scrape():
     mars_df = easy_table[0]
     mars_df.set_index("Mars - Earth Comparison" , drop = True, inplace = True)
     table_html = mars_df.to_html()
+    table_html = table_html.replace('\n', '')
 
     output_dict["table"] = table_html
-
-
+ 
     # Scrape hemisphere pics
 
     hemi_url = "https://marshemispheres.com/"
@@ -58,22 +58,28 @@ def scrape():
     soup = bs(html, 'html.parser')
 
     descriptions = soup.find_all("div", class_ = "description")
+    images = soup.find_all("img", class_ = "thumb")
 
     pic_names = []
 
     for j in range(len(descriptions)):
         pic_names.append(descriptions[j].h3.text.strip())
 
-    names = ["cerberus", "schiaparelli", "syrtis_major", "valles_marineris"]
     urls = []
-    for n in range(len(names)):
-        urls.append(f"https://marshemispheres.com/images/{names[n]}_enhanced.tif")
+
+    for pic in range(len(images)):
+        urls.append(images[pic]["src"])
+
+    urls_final = []
+
+    for url in range(len(urls)):
+        urls_final.append(f"https://marshemispheres.com/{urls[url]}")
 
     hemi = [None] * 4 
 
     for k in range(len(pic_names)):
-        hemi[k] = {"title":pic_names[k], "img_url":urls[k]}
-
+        hemi[k] = {"title":pic_names[k], "img_url":urls_final[k]}
+    
     output_dict["hemi"] = hemi
 
     browser.quit()

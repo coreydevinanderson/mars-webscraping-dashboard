@@ -13,11 +13,22 @@ Python code for the initial scraping was done in a Jupyter Notebook file and was
 
 Directory structure: web-scraping-challenge/
 
-/Mission-to-Mars/mission_to_mars.ipynb    Prototyping Python code for scraping app with printed outputs
-/Mission-to-Mars/templates/index.html    HTML file with Bootstrap CSS styling for webpage
-/Mission-to-Mars/images/screenshot_1     Upper screenshot of webpage
-/Mission-to-Mars/images/screenshot_2     Lower screenshot of webpage
-/Mission-to-Mars/app.py                  Flask app code
-/Mission-to-Mars/scrap_mars.py           Python code scraping code called by /scrape route in app.py 
+/Mission-to-Mars/mission_to_mars.ipynb    
+Prototyping Python code for scraping app with printed outputs
+
+/Mission-to-Mars/templates/index.html    
+HTML file with Bootstrap CSS styling for webpage
+
+/Mission-to-Mars/images/screenshot_1
+Upper screenshot of webpage
+
+/Mission-to-Mars/images/screenshot_2     
+Lower screenshot of webpage
+
+/Mission-to-Mars/app.py
+Flask app code
+
+/Mission-to-Mars/scrap_mars.py
+Python code scraping code called by /scrape route in app.py 
 
 All code was written by Corey Devin Anderson

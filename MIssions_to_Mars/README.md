@@ -9,7 +9,7 @@ Data were scraped from the following sites:
   * galaxyfacts-mars.com -> comparsion table of Earth and Mars
   * marshemispheres.com -> pictures of the four hemispheres of Mars
 
-Python code for the initial scraping was done in a Jupyter Notebook file and was then turned into a flask app.
+Python code for the initial scraping was done in a Jupyter Notebook file and was then turned into a flask app. The scraped data were stored locally in a MongoDB database via pymongo.
 
 Directory structure: web-scraping-challenge/
 

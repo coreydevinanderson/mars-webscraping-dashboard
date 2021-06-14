@@ -16,19 +16,19 @@ Directory structure: web-scraping-challenge/
 <strong>/Mission-to-Mars/mission_to_mars.ipynb</strong>   
 Prototyping Python code for scraping app with printed outputs
 
-/Mission-to-Mars/templates/index.html     
+<strong>/Mission-to-Mars/templates/index.html</strong>     
 HTML file with Bootstrap CSS styling for webpage
 
-/Mission-to-Mars/images/screenshot_1  
+<strong>/Mission-to-Mars/images/screenshot_1</strong> 
 Upper screenshot of webpage
 
-/Mission-to-Mars/images/screenshot_2  
+<strong>/Mission-to-Mars/images/screenshot_2</strong>   
 Lower screenshot of webpage
 
-/Mission-to-Mars/app.py 
+<strong>/Mission-to-Mars/app.py</strong>
 Flask app code
 
-/Mission-to-Mars/scrap_mars.py  
+<strong>/Mission-to-Mars/scrap_mars.py</strong>   
 Python code scraping code called by /scrape route in app.py 
 
 All code was written by Corey Devin Anderson

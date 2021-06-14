@@ -19,13 +19,13 @@ Prototyping Python code for scraping app with printed outputs
 <strong>/Mission-to-Mars/templates/index.html</strong>     
 HTML file with Bootstrap CSS styling for webpage
 
-<strong>/Mission-to-Mars/images/screenshot_1</strong> 
+<strong>/Mission-to-Mars/images/screenshot_1</strong>   
 Upper screenshot of webpage
 
 <strong>/Mission-to-Mars/images/screenshot_2</strong>   
 Lower screenshot of webpage
 
-<strong>/Mission-to-Mars/app.py</strong>
+<strong>/Mission-to-Mars/app.py</strong>  
 Flask app code
 
 <strong>/Mission-to-Mars/scrap_mars.py</strong>   

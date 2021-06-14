@@ -13,10 +13,10 @@ Python code for the initial scraping was done in a Jupyter Notebook file and was
 
 Directory structure: web-scraping-challenge/
 
-<strong>/Mission-to-Mars/mission_to_mars.ipynb</strong> 
+<strong>/Mission-to-Mars/mission_to_mars.ipynb</strong>   
 Prototyping Python code for scraping app with printed outputs
 
-/Mission-to-Mars/templates/index.html 
+/Mission-to-Mars/templates/index.html     
 HTML file with Bootstrap CSS styling for webpage
 
 /Mission-to-Mars/images/screenshot_1  

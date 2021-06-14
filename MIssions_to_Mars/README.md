@@ -1,7 +1,7 @@
 <h2> web-scraping challenge <h2>
 <br>
-<p> Repository for the Georgia Tech Data Science and Analytics: web-scraping-challenge.<p>
+Repository for the Georgia Tech Data Science and Analytics: web-scraping-challenge.
 <br>
-<p> In this excercise we used 'BeautifulSoup', 'splinter', and 'flask'in Python with Jupyter notebook to scrape data about Mars from various websites.</p>
+In this excercise we used 'BeautifulSoup', 'splinter', and 'flask'in Python with Jupyter notebook to scrape data about Mars from various websites.
 <br>
-<p> All code was written by Corey Devin Anderson </p>
+All code was written by Corey Devin Anderson

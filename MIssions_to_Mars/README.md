@@ -1,6 +1,6 @@
-Repository for the Georgia Tech Data Science and Analytics: web-scraping-challenge.
+I used 'BeautifulSoup', 'splinter', and 'flask'in Python with Jupyter Notebook to scrape data about Mars from various websites.
 
-In this excercise we used 'BeautifulSoup', 'splinter', and 'flask'in Python with Jupyter Notebook to scrape data about Mars from various websites.
+----
 
 Data were scraped from the following sites:
   
@@ -11,7 +11,7 @@ Data were scraped from the following sites:
 
 Python code for the initial scraping was done in a Jupyter Notebook file and was then turned into a flask app. The scraped data were stored locally in a MongoDB database via pymongo.
 
-Directory structure: web-scraping-challenge/
+Directory structure:
 
 <strong>/Mission-to-Mars/mission_to_mars.ipynb</strong>   
 Prototyping Python code for scraping app with printed outputs
@@ -30,5 +30,7 @@ Flask app code
 
 <strong>/Mission-to-Mars/scrap_mars.py</strong>   
 Python code scraping code called by /scrape route in app.py 
+
+----
 
 All code was written by Corey Devin Anderson
